@@ -6,11 +6,11 @@ while is_valid == False:
     n = randint(100000000, 999999999)
     l = [int(i) for i in str(n)]
     checksum = []
-    for i in l:
-        if l.index(i) % 2 == 0:
-            value = i * 1
+    for v in l:
+        if l.index(v) % 2 == 0:
+            value = v * 1
         else:
-            value = i * 2
+            value = v * 2
             if value > 9:
                 value += -9
         checksum.append(value)
